@@ -1,8 +1,7 @@
 steps:
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '-t', 'warsaw-docker.pkg.dev/rss-citacka/fusion-repo/fusion:latest', '.']
+  args: ['build', '-t', 'LOCATION-docker.pkg.dev/PROJECT_ID/fusion-repo/fusion:latest', '.']
 images:
-- 'warsaw-docker.pkg.dev/rss-citacka/fusion-repo/fusion:latest'
+- 'LOCATION-docker.pkg.dev/PROJECT_ID/fusion-repo/fusion:latest'
 options:
-  logging: 'GCS'  # Set logs to be stored in Google Cloud Storage
-  logsBucket: 'gs://fusion-build-logs'  # Specify the logs bucket
+  logging: 'CLOUD_LOGGING_ONLY'  # Use Cloud Logging for build logs

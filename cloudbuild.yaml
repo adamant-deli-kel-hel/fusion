@@ -1,0 +1,5 @@
+steps:
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['build', '-t', 'warsaw-docker.pkg.dev/rss-citacka/fusion-repo/fusion:latest', '.']
+images:
+- 'warsaw-docker.pkg.dev/rss-citacka/fusion-repo/fusion:latest'

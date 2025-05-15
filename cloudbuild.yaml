@@ -1,7 +1,7 @@
 steps:
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '-t', 'LOCATION-docker.pkg.dev/PROJECT_ID/fusion-repo/fusion:latest', '.']
+  args: ['build', '-t', 'warsaw-docker.pkg.dev/rss-citacka/fusion-repo/fusion:latest', '.']
 images:
-- 'LOCATION-docker.pkg.dev/PROJECT_ID/fusion-repo/fusion:latest'
+- 'warsaw-docker.pkg.dev/rss-citacka/fusion-repo/fusion:latest'
 options:
   logging: 'CLOUD_LOGGING_ONLY'  # Use Cloud Logging for build logs

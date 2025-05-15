@@ -3,3 +3,6 @@ steps:
   args: ['build', '-t', 'warsaw-docker.pkg.dev/rss-citacka/fusion-repo/fusion:latest', '.']
 images:
 - 'warsaw-docker.pkg.dev/rss-citacka/fusion-repo/fusion:latest'
+options:
+  logging: 'GCS'  # Set logs to be stored in Google Cloud Storage
+  logsBucket: 'gs://fusion-build-logs'  # Specify the logs bucket
